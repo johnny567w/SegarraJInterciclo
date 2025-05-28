@@ -1,4 +1,14 @@
-FROM ubuntu:latest
-LABEL authors="Johnny"
+version: '3.8'
 
-ENTRYPOINT ["top", "-b"]
+services:
+  backend:
+    build: ./Back
+    ports:
+      - "8081:8081"
+
+  frontend:
+    build: ./Frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
