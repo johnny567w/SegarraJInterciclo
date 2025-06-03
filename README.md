@@ -1,9 +1,9 @@
 Instrucciones de despliegue, Para probar en local
 1. clonar el repositorio de github
-2. git clone https://github.com/johnny567w/SegarraJInterciclo/tree/main
+2. git clone https://github.com/johnny567w/SegarraJInterciclo.git
 3. entar en la carpeta del archivo
 4. cd SEgarraJInterciclo
-5. docker-compose up
+5. docker-compose up --build
 
 Imagees en docker hub:
 docker.io/johnnys567/frontend-angular:latest
